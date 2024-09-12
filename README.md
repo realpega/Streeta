@@ -1,5 +1,14 @@
 # Streeta - Open Source Women Safety Project
 
+
+## How does the app work?
+
+Streeta requires just 3 basic permissions to work full-fledgedly!
+
+`ACCESS_FINE_LOCATION`: Allows the app to access precise location data using GPS.
+`READ_PHONE_STATE`: Grants access to phone state information (e.g. network state, SIM status).
+`SEND_SMS`: Enables the app to send SMS messages.
+
 ## Build Steps:
 
 
