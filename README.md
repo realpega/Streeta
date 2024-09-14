@@ -7,13 +7,13 @@ Streeta requires just 3 basic permissions to work full-fledgedly!
 
 `ACCESS_FINE_LOCATION`: Allows the app to access precise location data using GPS.
 
-`READ_PHONE_STATE`: Grants access to phone state information (e.g. network state, SIM status).
-
 `SEND_SMS`: Enables the app to send SMS messages.
 
 When you open the app for the first time, it asks you to enter a number to which the `Emergency SMS` with the location data is sent.
 
 Once you add a number, it's saved forever and the SMS will be sent automatically at the time of Emergency. In case you've entered an `Incorrect Number`, simply clear the App Data by holding down Streeta's App Launcher, going to App info, and then tapping on `Clear Data`.
+
+The `Launcher Activity` is `NumberActivity` and when the `UPDATE` button is clicked, a `SharedPreferences`
 
 ## Build Steps:
 
