@@ -32,10 +32,9 @@ The location data of the `Latitude` and the `Longitude` are captured in `double`
 
 The `Accuracy` is measured in metres. The location data is also dependent on your device's capabilities but most of the devices nowadays ensure `Accuracy` <20 metres. [THE LESSER THE VALUE, THE HIGHER THE ACCURACY]
 
-Once the data is received from your device's `LocationManager`, it generates a dynamic link and sends it to the saved number. When the link is clicked on the recipient's device, it opens in <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">`Google Maps`</a> directly and shows the exact location where the app was triggered.
-The `Latitude` and the `Longitude` data are also sent seperately below the link (in the same message) for in case the recipient's device is not having <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">`Google Maps`</a> installed during the very last moment of Emergency.
+Once the data is received from your device's `LocationManager`, it generates a dynamic link and sends it to the saved number. When the link is clicked on the recipient's device, it opens in <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">`Google Maps`</a> directly and shows the exact location where the app was triggered. The `Latitude` and the `Longitude` data are also sent seperately below the link (in the same message) for in case the recipient's device is not having <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">`Google Maps`</a> installed during the very last moment of Emergency.
 
-Once the SMS is sent, the `SmsActivity` doesn't close automatically to ensure that the SMS is sent properly if any sudden network issue arises.
+Once the SMS is sent, the `SmsActivity` doesn't close automatically to ensure that the SMS is sent properly if any sudden network issue arises. It also helps in identifying if any SMS was sent due to an accidental tap on Streeta's launcher.
 
 
 
