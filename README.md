@@ -3,7 +3,7 @@
 
 ## How does the app work?
 
-Streeta requires just 3 basic permissions to work full-fledgedly!
+Streeta requires just 2 basic permissions to work full-fledgedly!
 
 `ACCESS_FINE_LOCATION`: Allows the app to access precise location data using GPS.
 
@@ -11,9 +11,9 @@ Streeta requires just 3 basic permissions to work full-fledgedly!
 
 When you open the app for the first time, it asks you to enter a number to which the `Emergency SMS` with the location data is sent.
 
-Once you add a number, it's saved forever and the SMS will be sent automatically at the time of Emergency. In case you've entered an `Incorrect Number`, simply clear the App Data by holding down Streeta's App Launcher, going to App info, and then tapping on `Clear Data`.
+Once you add a number, it's saved locally forever and the SMS will be sent automatically at the time of Emergency. In case you've entered an `Incorrect Number`, simply clear the App Data by holding down Streeta's App Launcher, going to App info, and then tapping on `Clear Data`.
 
-The `Launcher Activity` is `NumberActivity` and when the `UPDATE` button is clicked, a `SharedPreferences` component is used to save the entered Phone Number to app's internal memory. This is saved locally and CANNOT be transmitted to others even if you share the `APK` file to another device. The `UPDATE` button then checks if the entered number is not empty or less than 10 digits. On passing these conditions, the `MainActivity` is launched.
+The `Launcher Activity` is `NumberActivity` and when the `UPDATE` button is clicked, a `SharedPreferences` component is used to save the entered Phone Number to the app's internal memory. This is saved locally and CANNOT be transmitted to others even if you share the `APK` file to another device. The `UPDATE` button then checks if the entered number is not empty or less than 10 digits. On passing these conditions, the `MainActivity` is launched.
 
 On the first start-up of the app, the `MainActivity` asks for the `ACCESS_FINE_LOCATION` permission.
 For `Android 11 (Red Velvet Cake)` & above, there are two different permission choices based on precision: `Precise` & `Approximate`. As to get the Exact Location during Emergency, granting the `Precise` permission is preferred.
